@@ -1,0 +1,24 @@
+PRUEBA TEORICA
+B. PREGUNTAS /
+Favor responder a las siguientes preguntas:
+A) Qué son los "Hooks" en React:
+    Son porciones de codigo especificos de React que trabajan con los estados y el ciclo de vida del componente
+
+B) “En React, todo es un componente”. Explica
+Porque estan comformados por varios componentes.
+
+C) Indique la diferencia de los métodos map(),forEach(),filter()yfind()
+map(): Transforma cada elemento de un arreglo y retorna un nuevo arreglo con los resultados de la transformación.
+forEach(): Itera sobre cada elemento de un arreglo y ejecuta una función para cada elemento, sin retornar un nuevo arreglo.
+filter(): Crea un nuevo arreglo con elementos que pasan una condición especificada por una función.
+find(): Retorna el primer elemento que cumple una condición especificada por una función, o undefined si ninguno cumple.
+
+D) Expliquequé es JSON.stringify() en JavaScript
+Toma el valor de un objeto y lo trasforma a cadena de texto.
+
+E) ¿Cuál es la diferencia entre "PUSH" y "PULL" de git?
+PUSH: Envía cambios locales al repositorio remoto.
+PULL: Trae cambios remotos al repositorio local.
+
+F) ¿En qué consiste la metodología SCRUM?
+Consiste un metodo de desarrollo de software donde facilita la resulucion de problemas complejas, sirve para mejorar el trabajo colaborativo entre equipos.
