@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom"
 import { useFetch } from "../hooks/useFetch";
+import { GridImages } from "../components/GridImages";
 
 export const PerfilScreen = () => {
     const {name} = useParams();
