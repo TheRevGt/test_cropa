@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useFetch } from '../hooks/useFetch'
 
 export const CardPokemon = () => {
-    const { id, name, types, sprites } = pokemon;
+  const url = `https://pokeapi.co/api/v2/pokemon/${name}`
+  const {data, isLoading, errors} = useFetch(url)
+
     return (
       <div className="pokemon-card">
         <div className="pokemon-image">
