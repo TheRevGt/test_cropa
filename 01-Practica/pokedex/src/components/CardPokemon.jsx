@@ -55,7 +55,7 @@ export const CardPokemon = ({number, name}) => {
             <div className="p-6 pt-0">
                 <button
                 onClick={showDetail}
-                className="block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85] active:scale-100 active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                className="block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85]"
                 type="button"
                 >
                     {detail ? (
@@ -64,7 +64,9 @@ export const CardPokemon = ({number, name}) => {
                         <p>Más</p>
                     )}
                 </button>
-                <Link to={`/pokemon/${name}`}>Ver </Link>
+                <Link to={`/pokemon/${name}`} 
+                  className="block w-full select-none rounded-lg bg-green-600 py-3.5 px-7 text-center align-middle font-bold uppercase text-white shadow-md shadow-green-600/20 transition-all hover:shadow-lg hover:shadow-green-600/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none"
+                >Saver más </Link>
             </div>
         </>
         )
