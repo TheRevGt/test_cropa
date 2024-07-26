@@ -1,4 +1,5 @@
-import { useFetch } from "../Hook/useFetch"
+
+import { useFetch } from "../hooks/useFetch"
 import { CardPokemon } from "./CardPokemon"
 
 export const GridPokemon = () => {

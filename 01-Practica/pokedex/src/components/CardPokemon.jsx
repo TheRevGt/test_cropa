@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import { useFetch } from '../hooks/useFetch'
 import { Link } from 'react-router-dom'
+import { useFetch } from '../hooks/useFetch'
 
 export const CardPokemon = () => {
   const url = `https://pokeapi.co/api/v2/pokemon/${name}`
