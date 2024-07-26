@@ -2,12 +2,16 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useFetch } from '../hooks/useFetch'
 
-export const CardPokemon = () => {
-  const url = `https://pokeapi.co/api/v2/pokemon/${name}`
-  const {data, isLoading, errors} = useFetch(url)
-
-    return (
-      <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md m-2">
+export const CardPokemon = ({number, name}) => {
+    const url = `https://pokeapi.co/api/v2/pokemon/${name}`
+    const [detail, setDetail] = useState(false)
+    const {data, isLoading, errors} = useFetch(url)
+    const showDetail = () => {
+        setDetail(!detail)
+    }
+  return (
+    
+    <div className="relative flex w-96 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md m-2">
 
     {
         isLoading
@@ -66,5 +70,5 @@ export const CardPokemon = () => {
         )
     }
     </div>
-    );
+  )
 }
