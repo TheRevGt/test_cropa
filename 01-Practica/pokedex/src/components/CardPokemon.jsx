@@ -52,10 +52,10 @@ export const CardPokemon = ({number, name}) => {
                 </p>   
                 </div>}
             </div>
-            <div className="p-6 pt-0">
+            <div className="p-6 space-y-2 text-center">
                 <button
                 onClick={showDetail}
-                className="block w-full select-none rounded-lg bg-blue-gray-900/10 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85]"
+                className=" w-auto rounded-lg hover:bg-gray-200/70 py-3 px-6 text-center align-middle text-xs font-bold uppercase text-blue-gray-900 transition-all hover:scale-105 focus:scale-105 focus:opacity-[0.85]"
                 type="button"
                 >
                     {detail ? (
