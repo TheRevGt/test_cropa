@@ -7,7 +7,6 @@ export const GridPokemon = () => {
     const {data, isLoading, errors} = useFetch(url)
     return (
     <>
-      <h1 className=" text-3xl font-bold underline">Pokedex</h1>
       {
         isLoading
         ? <p>Cargando</p>
