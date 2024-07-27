@@ -1,6 +1,7 @@
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { useFetch } from "../hooks/useFetch";
 import { GridImages } from "../components/GridImages";
+import { Breadcrum } from "../components/Breadcrum";
 
 export const PerfilScreen = () => {
     const {name} = useParams();
@@ -10,7 +11,7 @@ export const PerfilScreen = () => {
   return (
     
     <div className=" flex w-auto mx-4 flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md m-2">
-
+        <Breadcrum/>
     {
         isLoading
         ? <p>Cargando</p>
